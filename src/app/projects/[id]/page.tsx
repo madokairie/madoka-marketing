@@ -21,6 +21,12 @@ import {
 import { ProjectTabs } from "@/components/project/project-tabs";
 import { OverviewTab } from "@/components/project/overview-tab";
 import { LPList } from "@/components/lp/lp-list";
+import { DistributionList } from "@/components/distribution/distribution-list";
+import { LaunchDashboard } from "@/components/dashboard/launch-dashboard";
+import { FunnelDesignTab } from "@/components/funnel/funnel-design-tab";
+import { CalendarTab } from "@/components/calendar/calendar-tab";
+import { ReportTab } from "@/components/report/report-tab";
+import { ExportTab } from "@/components/export/export-tab";
 import type { Project } from "@/lib/types";
 
 const mockProject: Project = {
@@ -240,7 +246,13 @@ export default function ProjectDetailPage() {
       <ProjectTabs>
         {{
           overview: <OverviewTab project={project} />,
+          funnel: <FunnelDesignTab />,
           lp: <LPList />,
+          distribution: <DistributionList />,
+          calendar: <CalendarTab />,
+          dashboard: <LaunchDashboard />,
+          report: <ReportTab />,
+          export: <ExportTab />,
         }}
       </ProjectTabs>
     </div>

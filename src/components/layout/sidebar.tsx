@@ -19,7 +19,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip
 
 const navItems = [
   { href: "/dashboard", label: "ダッシュボード", icon: LayoutDashboard },
-  { href: "/dashboard", label: "プロジェクト", icon: FolderOpen },
+  { href: "/projects/mock-1", label: "プロジェクト", icon: FolderOpen },
   { href: "/knowledge", label: "ナレッジベース", icon: BookOpen },
   { href: "/testimonials", label: "お客様の声", icon: Star },
   { href: "/settings", label: "設定", icon: Settings },
