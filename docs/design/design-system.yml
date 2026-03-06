@@ -1,0 +1,257 @@
+version: "1.0.0"
+generated_at: "2026-03-06T00:00:00Z"
+source: "docs/requirements/design-requirements.md"
+project: "Madoka Launch Engine"
+
+aesthetic:
+  direction: professional-luxury
+  mood: intellectual-trustworthy-warm
+  differentiation: "マーケティングツールにありがちな派手さではなく、落ち着いた上質感。Notion的クリーンさ + 高級ブランドの余白感。"
+  principles:
+    - "Clarity First - 情報の優先順位が一目でわかる"
+    - "Breathing Space - 余白を恐れない"
+    - "Professional Warmth - 温かみのあるプロフェッショナル感"
+    - "Action-Oriented - 次に何をすべきかが常に明確"
+
+colors:
+  primary: "#1a2332"
+  secondary: "#c9a96e"
+  background:
+    light: "#faf9f7"
+    dark: "#1c1c1e"
+  surface:
+    light: "#ffffff"
+    dark: "#2c2c2e"
+  text:
+    primary: "#2d2d2d"
+    secondary: "#8a8a8a"
+    inverse: "#faf9f7"
+  border:
+    light: "#e5e5e5"
+    dark: "#3a3a3c"
+  status:
+    success: "#2d6a4f"
+    warning: "#d4a843"
+    error: "#a3333d"
+    info: "#4a6fa5"
+  accent:
+    blue: "#4a6fa5"
+    gold: "#c9a96e"
+
+typography:
+  heading:
+    family: "Noto Sans JP"
+    fallback: "Hiragino Sans, sans-serif"
+    weights: [600, 700]
+    sizes:
+      h1: "2rem"
+      h2: "1.5rem"
+      h3: "1.25rem"
+      h4: "1.125rem"
+    line_height: 1.4
+    letter_spacing: "0.02em"
+  body:
+    family: "Noto Sans JP"
+    fallback: "Hiragino Sans, sans-serif"
+    weights: [400, 500]
+    sizes:
+      large: "1.125rem"
+      regular: "1rem"
+      small: "0.875rem"
+      xs: "0.75rem"
+    line_height: 1.8
+    letter_spacing: "0.02em"
+  numeric:
+    family: "Inter"
+    fallback: "system-ui, sans-serif"
+    weights: [500, 600, 700]
+    features: "tabular-nums"
+  mono:
+    family: "JetBrains Mono"
+    fallback: "monospace"
+    weights: [400]
+    sizes:
+      regular: "0.875rem"
+  japanese:
+    font_feature_settings: '"palt" 1'
+    text_wrap: "balance"
+
+spacing:
+  unit: "4px"
+  scale:
+    0: "0"
+    1: "4px"
+    2: "8px"
+    3: "12px"
+    4: "16px"
+    5: "20px"
+    6: "24px"
+    8: "32px"
+    10: "40px"
+    12: "48px"
+    16: "64px"
+    20: "80px"
+    24: "96px"
+
+borders:
+  radius:
+    none: "0"
+    sm: "4px"
+    md: "8px"
+    lg: "12px"
+    xl: "16px"
+    full: "9999px"
+  width:
+    thin: "1px"
+    medium: "2px"
+
+shadows:
+  sm: "0 1px 2px rgba(0, 0, 0, 0.04)"
+  md: "0 2px 8px rgba(0, 0, 0, 0.06)"
+  lg: "0 4px 16px rgba(0, 0, 0, 0.08)"
+  xl: "0 8px 32px rgba(0, 0, 0, 0.1)"
+  inner: "inset 0 1px 2px rgba(0, 0, 0, 0.04)"
+
+components:
+  library: "shadcn/ui"
+  styling: "tailwind"
+  animation: "motion/react"
+  icons: "lucide-react"
+  charts: "recharts"
+  utility: "cn (class-variance-authority)"
+  rules:
+    button:
+      border_radius: "8px"
+      hover_duration: "150ms"
+      variants:
+        primary:
+          bg: "#1a2332"
+          text: "#faf9f7"
+          hover_bg: "#2a3342"
+        secondary:
+          bg: "transparent"
+          text: "#1a2332"
+          border: "1px solid #e5e5e5"
+          hover_bg: "#f5f5f3"
+        accent:
+          bg: "#c9a96e"
+          text: "#ffffff"
+          hover_bg: "#b8984d"
+        ghost:
+          bg: "transparent"
+          text: "#8a8a8a"
+          hover_bg: "#f5f5f3"
+        destructive:
+          bg: "#a3333d"
+          text: "#ffffff"
+          hover_bg: "#8a2a33"
+    card:
+      border_radius: "12px"
+      border: "1px solid #e5e5e5"
+      shadow: "0 1px 2px rgba(0, 0, 0, 0.04)"
+      padding: "24px"
+      hover_shadow: "0 2px 8px rgba(0, 0, 0, 0.06)"
+      hover_duration: "200ms"
+    input:
+      border_radius: "8px"
+      border: "1px solid #e5e5e5"
+      focus_border: "#4a6fa5"
+      focus_ring: "0 0 0 2px rgba(74, 111, 165, 0.2)"
+      height: "40px"
+      padding: "0 12px"
+    modal:
+      border_radius: "16px"
+      backdrop: "rgba(0, 0, 0, 0.5)"
+      backdrop_blur: "4px"
+    toast:
+      position: "bottom-right"
+      duration: "3000ms"
+      border_radius: "8px"
+    loading:
+      type: "skeleton"
+      shimmer: true
+      note: "スピナーは使わない"
+    badge:
+      border_radius: "9999px"
+      padding: "2px 8px"
+      font_size: "0.75rem"
+    tab:
+      active_border_bottom: "2px solid #1a2332"
+      inactive_color: "#8a8a8a"
+
+animation:
+  duration:
+    fast: "100ms"
+    normal: "150ms"
+    slow: "200ms"
+    max: "200ms"
+  easing:
+    default: "cubic-bezier(0.4, 0, 0.2, 1)"
+    in: "cubic-bezier(0.4, 0, 1, 1)"
+    out: "cubic-bezier(0, 0, 0.2, 1)"
+  rules:
+    - "200ms以下のみ"
+    - "compositor propsのみ (transform, opacity)"
+    - "レイアウトプロパティのアニメーション禁止"
+    - "prefers-reduced-motion対応必須"
+  transitions:
+    hover: "opacity 150ms, transform 150ms"
+    page: "opacity 200ms"
+    modal: "opacity 200ms, transform 200ms"
+    sidebar: "transform 200ms"
+
+responsive:
+  pc_first: true
+  breakpoints:
+    sm: "640px"
+    md: "768px"
+    lg: "1024px"
+    xl: "1280px"
+    2xl: "1536px"
+  layout:
+    sidebar:
+      width: "256px"
+      collapsible: true
+      collapsed_width: "64px"
+    main:
+      max_width: "1200px"
+      padding: "24px"
+    content:
+      max_width: "960px"
+  mobile_required:
+    - "ダッシュボード日次入力"
+    - "配信文プレビュー"
+    - "プロジェクト一覧"
+  mobile_not_required:
+    - "ファネル設計"
+    - "スライド生成"
+    - "LP編集"
+
+dark_mode:
+  enabled: true
+  strategy: "class"
+  auto_detect: true
+
+quality:
+  lighthouse:
+    performance: 90
+    accessibility: 95
+    best_practices: 100
+    seo: 90
+  core_web_vitals:
+    fcp: "1.8s"
+    lcp: "2.5s"
+    cls: "0.1"
+    inp: "200ms"
+  wcag_level: "AA"
+  contrast_ratio: "4.5:1"
+
+anti_patterns:
+  - "グラデーション背景"
+  - "ネオンカラー/蛍光色"
+  - "過剰なドロップシャドウ"
+  - "200ms以上のアニメーション"
+  - "過剰な装飾要素"
+  - "スピナー（スケルトンを使う）"
+  - "blur(20px)以上のブラー"
+  - "z-index: 9999"
